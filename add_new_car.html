@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Car</title>
+    <link rel="stylesheet" type="text/css" href="add_new_car_styles.css">
+</head>
+<body>
+    <h1>Add/Edit New Car</h1>
+    <form id="addCarForm" form action="process_car.php" method="post">
+        <label for="vehicleModel">Vehicle Model:</label>
+        <input type="text" id="vehicleModel" required><br>
+
+        <label for="vehicleNumber">Vehicle Number:</label>
+        <input type="text" id="vehicleNumber" required><br>
+
+        <label for="seatingCapacity">Seating Capacity:</label>
+        <input type="number" id="seatingCapacity" required><br>
+
+        <label for="rentPerDay">Rent per Day:</label>
+        <input type="number" id="rentPerDay" required><br>
+
+        <label for="vehicleImage">Upload Vehicle Image:</label>
+        <input type="file" id="vehicleImage"><br>
+
+        <button type="button" id="addCarButton">Add Car</button>
+        <button type="button" id="editCarButton">Edit Car</button>
+    </form>
+    <div id="feedback"></div>
+
+    <script src="add_new_car_script.js"></script>
+</body>
+</html>
